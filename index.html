@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>Memory Management</title>
+    </head>
+    <body>
+        <div>
+            <h1>OS project2: Memory Management</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class = "DropdownBox">
+                <h2>选择调页算法</h2>
+                <select id = "algorithm" name="algorithm" class = "selectbox">
+                    <option value = "FIFO">FIFO先进先出策略</option>
+                    <option value = "LRU">LRU缓存淘汰策略</option>
+                </select>
+                <br>
+                <h2>选择执行方式</h2>
+                <select id = "execution" name="execution" class = "selectbox">
+                    <option value = "step">单步执行</option>
+                    <option value = "simulation">模拟运行</option>
+                </select>
+            </div>
+            <br>
+            <div class = >
+                <button id = "run-btn" type = "button" class = "btn">执行</button>
+                <button id = "restart-btn" type = "button" class = "btn">重新开始</button>
+                <button id = "display-btn" type = "button" class = "btn">显示过程</button>
+            </div>
+            <br>
+            <div class = card>
+                <h3>运行状态</h3>
+                <p>
+                    当前指令: 
+                    <span id = "current_instruction">
+                        <b>null</b>
+                    </span>
+                </p>
+                <p>
+                    实际内存: 
+                    <span id = "physical_memory">
+                        <b>null</b>
+                    </span>
+                </p>
+                <p>
+                    内存块: 
+                    <span id = "memory_block">
+                        <b>null</b>
+                    </span>
+                </p>
+                <p>
+                    是否缺页: 
+                    <span id = "bpage_missing">
+                        <b>null</b>
+                    </span>
+                </p>
+                <p>
+                    缺页率: 
+                    <span id = "miss_page_rate">
+                        <b>0</b>
+                    </span>
+                </p>
+            </div>
+            <br>
+            <div class="table" >
+                <table class="thead">
+                    <colgroup>
+                        <col width="50">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="300">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>指令</th>
+                        <th>块1</th>
+                        <th>块2</th>
+                        <th>块3</th>
+                        <th>块4</th>
+                        <th>行为说明</th>
+                    </tr>
+                    </thead>
+                </table>
+                <div style="height: 300px; overflow-y: scroll; overflow-x: hidden;">
+                    <table class="tbody">
+                        <colgroup>
+                            <col width="50">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="300">
+                        </colgroup>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
