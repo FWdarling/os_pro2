@@ -27,8 +27,8 @@
             </div>
             <br>
             <div class = >
-                <button id = "run-btn" type = "button" class = "btn">执行</button>
-                <button id = "restart-btn" type = "button" class = "btn">重新开始</button>
+                <button id = "run-btn" type = "button" class = "btn" onclick="start()">执行</button>
+                <button id = "restart-btn" type = "button" class = "btn" onclick="initialize()">重新开始</button>
                 <button id = "display-btn" type = "button" class = "btn">显示过程</button>
             </div>
             <br>
@@ -66,8 +66,8 @@
                 </p>
             </div>
             <br>
-            <div class="table" >
-                <table class="thead">
+            <div id="table" style = "visibility: hidden;">
+                <table class="thead" >
                     <colgroup>
                         <col width="50">
                         <col width="100">
@@ -105,5 +105,6 @@
             </div>
             
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
