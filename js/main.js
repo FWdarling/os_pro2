@@ -73,7 +73,7 @@ function FIFO(ins){
         bIsMissing = false;
     }
     
-    //不命中
+    //不命�?
     else{
         bIsMissing = true;
         missingPages++;
@@ -125,7 +125,7 @@ function LRU(ins){
         lruQueue[findRes] = runTimesCnt;
     }
     
-    //不命中
+    //不命�?
     else{
         bIsMissing = true;
         missingPages++;
@@ -183,17 +183,19 @@ function start(){
     if(!runTimesCnt)   initialize();
     var selectBox = document.getElementById("algorithm");
     var algo = selectBox.value;
-    selectBox.disabled = true;
     selectBox = document.getElementById("execution");
     var exec = selectBox.value;
-    selectBox.disabled = true;
-    if(exec === "step") {
-        run(algo);
-        updatePage();
-    }
-    else if(exec === "simulation"){
-        for(var i = 0; i < 320; i++) run(algo);
-        updatePage();
-        document.getElementById("run-btn").disabled = true;
+    if(algo != "empty" && exec != "empty"){
+        selectBox.disabled = true;
+        selectBox.disabled = true;
+        if(exec === "step") {
+            run(algo);
+            updatePage();
+        }
+        else if(exec === "simulation"){
+            for(var i = 0; i < 320; i++) run(algo);
+            updatePage();
+            document.getElementById("run-btn").disabled = true;
+        }
     }
 }

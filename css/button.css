@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+.grid {
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    grid-gap: 40px 25px;
+  }
+  
+  button,
+  [role="button"] {
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#D8D9DB), color-stop(80%, #fff), to(#FDFDFD));
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+  }
+  button:disabled,
+  [role="button"]:disabled {
+   opacity: 0.6;
+   cursor: not-allowed;
+  }

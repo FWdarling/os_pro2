@@ -1,0 +1,28 @@
+body {
+  color: #d9d9d9;
+  background-color: #222;
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 0;
+  padding: 0;
+}
+  h1 {
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+h2, section, table{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+ }
