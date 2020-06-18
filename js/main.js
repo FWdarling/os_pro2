@@ -73,7 +73,7 @@ function FIFO(ins){
         bIsMissing = false;
     }
     
-    //不命�?
+    //不命中
     else{
         bIsMissing = true;
         missingPages++;
@@ -125,7 +125,7 @@ function LRU(ins){
         lruQueue[findRes] = runTimesCnt;
     }
     
-    //不命�?
+    //不命中
     else{
         bIsMissing = true;
         missingPages++;
